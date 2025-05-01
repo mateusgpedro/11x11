@@ -1,0 +1,15 @@
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.deps.json
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.runtimeconfig.json
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.pdb
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.csproj.AssemblyReference.cache
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfoInputs.cache
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfo.cs
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.csproj.CoreCompileInputs.cache
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.sourcelink.json
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/refint/UserService.Persistence.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.pdb
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.genruntimeconfig.cache
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/Debug/net8.0/ref/UserService.Persistence.dll
