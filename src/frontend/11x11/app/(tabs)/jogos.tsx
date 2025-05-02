@@ -4,9 +4,12 @@ import {
   TouchableOpacity,
   StyleSheet,
   ScrollView,
+  TextInput,
+  Platform, // Importar Platform
 } from "react-native";
 import React from "react";
 import CardPartida from "../../components/CardPartida"; // Ajuste o caminho
+import { Ionicons } from "@expo/vector-icons"; // Importar Ionicons
 
 const jogos = () => {
   const handleCriarPartidaPress = () => {
@@ -14,9 +17,34 @@ const jogos = () => {
     // Navegação ou lógica do modal aqui
   };
 
+  // Estado para o texto da busca (opcional, para funcionalidade futura)
+  const [searchText, setSearchText] = React.useState("");
+
   return (
     <View style={styles.screenContainer}>
       <Text style={styles.title}>Partidas</Text>
+
+      {/* --- Barra de Busca --- */}
+      <View style={styles.searchContainer}>
+        <Ionicons
+          name="search"
+          size={20}
+          color="#8E8E93"
+          style={styles.searchIcon}
+        />
+        <TextInput
+          style={styles.searchInput}
+          placeholder="Pesquisar partidas..."
+          placeholderTextColor="#8E8E93"
+          value={searchText}
+          onChangeText={setSearchText}
+          // --- ADICIONADO ---
+          underlineColorAndroid="transparent" // Remove sublinhado no Android
+          // --- FIM ADICIONADO ---
+        />
+      </View>
+      {/* --- Fim da Barra de Busca --- */}
+
       <ScrollView
         contentContainerStyle={styles.scrollContentContainer}
         showsVerticalScrollIndicator={false}
@@ -30,14 +58,7 @@ const jogos = () => {
           horaTermino="21:30"
           descricao="Partida semanal para aliviar o stress. Trazer R$15 para o aluguel da quadra e água."
         />
-        <CardPartida
-          imagemBannerUrl="https://c.pxhere.com/photos/a0/63/the_ball_stadion_football_the_pitch_grass_game_sport_match-1331809.jpg!d"
-          titulo="Racha dos Veteranos"
-          localizacao="Clube Recreativo - Campo Principal"
-          horaInicio="09:00"
-          horaTermino="10:30"
-          descricao="Jogo para maiores de 40. Ritmo mais cadenciado. Churrasco opcional após o jogo."
-        />
+        {/* ... (outros cards) ... */}
         <CardPartida
           imagemBannerUrl="https://c.pxhere.com/photos/a0/63/the_ball_stadion_football_the_pitch_grass_game_sport_match-1331809.jpg!d"
           titulo="Amistoso Empresa X"
@@ -75,10 +96,10 @@ const jogos = () => {
         <View style={{ height: 100 }} />
       </ScrollView>
 
-      {/* Container do Botão Flutuante - AJUSTADO */}
+      {/* Container do Botão Flutuante */}
       <View style={styles.fabContainer}>
         <TouchableOpacity
-          style={styles.criarpartidaB} // Estilo do botão - AJUSTADO
+          style={styles.criarpartidaB}
           onPress={handleCriarPartidaPress}
           activeOpacity={0.8}
         >
@@ -94,26 +115,51 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: "rgba(3, 3, 38, 1)",
   },
-  scrollContentContainer: {
-    paddingTop: 50,
-    paddingBottom: 20, // Ajuste conforme necessário para o espaço final
+  title: {
+    fontSize: 28,
+    fontWeight: "600",
+    color: "#E1E1E1",
+    textAlign: "left",
+    marginLeft: 16,
+    marginBottom: 15,
   },
-  // Container para posicionar o botão flutuante - AJUSTADO
+  searchContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "rgba(55, 53, 78, 1)",
+    borderRadius: 10,
+    marginHorizontal: 16,
+    paddingHorizontal: 12,
+    marginBottom: 20,
+    height: 45,
+  },
+  searchIcon: {
+    marginRight: 8,
+  },
+  searchInput: {
+    flex: 1,
+    fontSize: 16,
+    color: "#FFFFFF",
+    height: "100%",
+    backgroundColor: "rgba(55, 53, 78, 1)", // Garante que o fundo do input seja o mesmo do container
+    outlineStyle: "none" as any,
+  },
+  scrollContentContainer: {
+    paddingBottom: 20,
+  },
   fabContainer: {
     position: "absolute",
-    bottom: 30,
-    left: 16, // Mesma margem horizontal dos cards
-    right: 16, // Mesma margem horizontal dos cards
-    // alignItems: 'center', // Removido - o botão vai preencher
+    bottom: 0,
+    left: 16,
+    right: 16,
+    paddingBottom: 15,
   },
-  // Estilo para o botão - AJUSTADO
   criarpartidaB: {
     backgroundColor: "rgba(88, 95, 223, 1)",
     paddingVertical: 12,
-    paddingHorizontal: 20, // Mantém o padding interno horizontal
-    borderRadius: 5, // Mantendo o borderRadius que você tinha
-    // width: "%", // Removido - o botão vai ocupar a largura do fabContainer
-    alignItems: "center", // Mantém o texto centralizado dentro do botão
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: "center",
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
@@ -124,14 +170,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
     fontWeight: "bold",
-  },
-  title: {
-    fontSize: 30,
-    fontWeight: 600,
-    color: "#E1E1E1",
-    textAlign: "left",
-    marginLeft: 24,
-    verticalAlign: "middle",
   },
 });
 
