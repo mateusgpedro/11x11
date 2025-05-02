@@ -15,6 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0959120f-b3f0-407b-bdde-0202405d2ca7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UserService.Application/DTOs/CreateUserDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../11x11-project.sln" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppHost/AppHost.csproj" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../AppHost/Program.cs" beforeDir="false" />
@@ -66,6 +67,48 @@
       <change beforePath="$PROJECT_DIR$/../UserService/UserService.Persistance/obj/Debug/net8.0/UserService.Persistance.AssemblyInfoInputs.cache" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserService/UserService.Persistance/obj/Debug/net8.0/UserService.Persistance.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../UserService/UserService.Persistance/obj/Debug/net8.0/UserService.Persistance.GlobalUsings.g.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/UserService.Application.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/UserService.Application.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/UserService.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/UserService.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/UserService.Domain.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/UserService.Domain.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/Infra/ApplicationDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/Infra/ApplicationDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/UserService.Persistence.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/UserService.Persistence.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/UserService.Persistence.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/UserService.Persistence.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/UserService.Persistence.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/UserService.Persistence.csproj.nuget.g.targets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Persistence/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../frontend/11x11/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/11x11/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -276,7 +319,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746119481317</updated>
       <workItem from="1746119482691" duration="380000" />
-      <workItem from="1746119992068" duration="2167000" />
+      <workItem from="1746119992068" duration="26267000" />
     </task>
     <servers />
   </component>
