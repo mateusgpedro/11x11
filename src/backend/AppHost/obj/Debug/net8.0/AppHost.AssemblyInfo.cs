@@ -10,7 +10,7 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("6d10fd92-3b6d-4aca-83f7-23d7e322bb8c")]
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("9cc53503-bd1e-4405-b223-f2b90d3fce59")]
 [assembly: System.Reflection.AssemblyMetadata("dcpclipath", "/Users/josepedro/.nuget/packages/aspire.hosting.orchestration.osx-arm64/8.2.2/too" +
     "ls/dcp")]
 [assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "/Users/josepedro/.nuget/packages/aspire.hosting.orchestration.osx-arm64/8.2.2/too" +
@@ -23,7 +23,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0374fd6e1ca2eeadf0504b844da6af865f2b3ed3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da3718c6a7dd333794bfbe50cd467caa03e89db2")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

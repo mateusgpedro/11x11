@@ -1,11 +1,11 @@
 var builder = DistributedApplication.CreateBuilder(args);
 
 var postgres = builder.AddPostgres("postgres")
-    .WithPgAdmin();;
+    .WithPgAdmin();
 
-var postgresdb = postgres.AddDatabase("postgresdb");
+var userDb = postgres.AddDatabase("users-db");
 
 builder.AddProject<Projects.UserService_API>("user-service")
-    .WithReference(postgresdb);
+    .WithReference(userDb);
 
 builder.Build().Run();
