@@ -29,8 +29,8 @@
               "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/UserService.Application.csproj": {
                 "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/UserService.Application.csproj"
               },
-              "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/UserService.Persistence.csproj": {
-                "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/UserService.Persistence.csproj"
+              "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj": {
+                "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj"
               }
             }
           }
@@ -50,7 +50,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.15, )"
             },
@@ -216,14 +218,14 @@
         }
       }
     },
-    "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/UserService.Persistence.csproj": {
+    "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/UserService.Persistence.csproj",
-        "projectName": "UserService.Persistence",
-        "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/UserService.Persistence.csproj",
+        "projectUniqueName": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj",
+        "projectName": "UserService.Infrastructure",
+        "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj",
         "packagesPath": "/Users/josepedro/.nuget/packages/",
-        "outputPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Persistence/obj/",
+        "outputPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/josepedro/.nuget/NuGet/NuGet.Config"
@@ -272,10 +274,6 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.15, )"
-            },
-            "Npgsql.EntityFrameworkCore.PostgreSQL": {
-              "target": "Package",
-              "version": "[8.0.11, )"
             }
           },
           "imports": [

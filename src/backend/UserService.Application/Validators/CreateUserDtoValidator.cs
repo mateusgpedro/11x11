@@ -4,7 +4,7 @@ using UserService.Domain.Repositories;
 
 namespace UserService.Application.Validators;
 
-internal sealed class CreateUserDtoValidator : AbstractValidator<CreateUserDto>
+public sealed class CreateUserDtoValidator : AbstractValidator<CreateUserDto>
 {
     public CreateUserDtoValidator(IUserRepository userRepository)
     {
