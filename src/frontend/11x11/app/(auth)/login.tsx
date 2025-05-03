@@ -103,7 +103,7 @@ const HomeScreen: React.FC = () => {
         {/* Se LoginText precisar de props, passe-as aqui */}
         {/* Exemplo: <LoginText title="Bem-vindo!" /> */}
         {/* Removido temporariamente se não tiver props ou conteúdo visível */}
-        <Text style={styles.title}>Bem Vindo!</Text>{" "}
+        <Text style={styles.title}>Bem Vindo!</Text>
         <Text style={styles.subtitle}>Organiza. Jogue. Vença.</Text>
         {/* Adicionado um título simples */}
         {/* Input de Email */}
@@ -151,10 +151,10 @@ const HomeScreen: React.FC = () => {
           promptText="Ainda não tens conta?"
           actionText="Sign up"
           onActionPress={handleSignUpPress} // Usar a função de navegação
-          // Adicione estilos se o componente SignUpPrompt os aceitar
-          // style={styles.signUpContainer}
-          // promptStyle={styles.signUpPromptText}
-          // actionStyle={styles.signUpActionText}
+        // Adicione estilos se o componente SignUpPrompt os aceitar
+        // style={styles.signUpContainer}
+        // promptStyle={styles.signUpPromptText}
+        // actionStyle={styles.signUpActionText}
         />
         {/* Botão de Login */}
         <Button

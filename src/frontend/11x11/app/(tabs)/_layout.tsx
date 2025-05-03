@@ -73,7 +73,7 @@ export default function TabLayout() {
       {/* Aba Home */}
       <Tabs.Screen
         name="home"
-        // Não precisa de options aqui se o ícone padrão for o de home
+      // Não precisa de options aqui se o ícone padrão for o de home
       />
       {/* Aba Jogos */}
       <Tabs.Screen
@@ -112,6 +112,18 @@ export default function TabLayout() {
               color={color}
             />
           ),
+        }}
+      />
+      <Tabs.Screen
+        name="finalizar"
+        options={{
+          href: null,
+        }}
+      />
+      <Tabs.Screen
+        name="criar"
+        options={{
+          href: null,
         }}
       />
     </Tabs>
