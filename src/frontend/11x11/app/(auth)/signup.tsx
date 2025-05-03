@@ -20,6 +20,7 @@ import { useRouter } from "expo-router"; // Importar useRouter
 import FloatingLabelInput from "../../components/FloatingLabelInput";
 import Button from "../../components/button";
 import SignUpPrompt from "../../components/SignUp"; // Reutilizando o componente
+import { auth0Domain, clientId, connection } from "@/auth-config";
 
 // --- Definição de Tipos (Exemplo - Ajuste conforme seus componentes) ---
 // Idealmente, você importaria estes tipos dos arquivos dos componentes.
@@ -69,6 +70,15 @@ const SignUpScreen: React.FC = () => {
     error: "#FF6B6B", // Cor para erros de validação
   };
 
+  const registerAccount = async (email: String, password: String, username: String) => {
+    try {
+      
+    }
+    catch (e) {
+      console.log(e)
+    }
+  }
+
   const handleLoginPromptPress = () => {
     // Navega de volta para a tela de login (assumindo que está na raiz '/')
     router.replace("/");
@@ -85,6 +95,7 @@ const SignUpScreen: React.FC = () => {
       return;
     }
     // Adicione mais validações se necessário (ex: formato de email, força da senha)
+    
 
     // --- Lógica de Criação de Conta ---
     console.log(
@@ -95,6 +106,7 @@ const SignUpScreen: React.FC = () => {
     );
     // Aqui você chamaria sua API para criar a conta
     // Exemplo: createUser({ username, email, password });
+    registerAccount(email, password, username);
 
     // Após sucesso (simulado aqui):
     Alert.alert("Sucesso", "Conta criada com sucesso!", [

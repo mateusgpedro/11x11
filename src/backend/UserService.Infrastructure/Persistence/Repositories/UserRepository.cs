@@ -34,11 +34,13 @@ public class UserRepository : IUserRepository
         
         await _dbContext.SaveChangesAsync();  
     }  
-    public async Task CreateUserAsync(string username, string email)  
+    public async Task<User> CreateUserAsync(string username, string email, string hashedPassword)  
     {        
-        var newUser = new User(Guid.NewGuid(), username, email);  
+        var newUser = new User(Guid.NewGuid(), username, email, hashedPassword);  
         await _dbContext.AddAsync(newUser);  
         await _dbContext.SaveChangesAsync();  
+        
+        return newUser;
     }  
     public async Task<bool> IsUsernameUniqueAsync(string username)  
     {        

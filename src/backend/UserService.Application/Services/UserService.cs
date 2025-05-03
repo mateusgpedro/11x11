@@ -1,6 +1,7 @@
 using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using UserService.Application.DTOs;
+using UserService.Domain.Entities;
 using UserService.Domain.Repositories;
 
 namespace UserService.Application.Services;
@@ -14,8 +15,20 @@ public class UserService
         _userRepository = userRepository;
     }
 
-    public async Task CreateUserAsync(CreateUserDto dto)
+    public async Task<User> CreateUserAsync(CreateUserDto dto)
     {
-        await _userRepository.CreateUserAsync(dto.Username, dto.Email);
+        var hashedPassword = BCrypt.Net.BCrypt.HashPassword(dto.Password);
+        
+        var newUser = await _userRepository.CreateUserAsync(dto.Username, dto.Email, hashedPassword);
+
+        return newUser;
+    }
+
+    public async Task<User?> LoginUserAsync(LoginUserDto dto)
+    {
+        var user = await _userRepository.GetUserByUsernameAsync(dto.Username);
+        
+        bool isValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
+        return isValid ? user : null;
     }
 }
