@@ -5,20 +5,40 @@ import {
   StyleSheet,
   ScrollView,
   TextInput,
-  Platform, // Importar Platform
+  Platform,
 } from "react-native";
-import React from "react";
+// --- IMPORTAR useState ---
+import React, { useState } from "react"; // Mudança: Importar useState
 import CardPartida from "../../components/CardPartida"; // Ajuste o caminho
-import { Ionicons } from "@expo/vector-icons"; // Importar Ionicons
+import { Ionicons } from "@expo/vector-icons";
+// --- IMPORTAR O DIALOG ---
+import CriarPartidaDialog from "../../components/CriarPartidaDialog"; // Ajuste o caminho se necessário
 
 const jogos = () => {
-  const handleCriarPartidaPress = () => {
-    console.log("Botão Criar Partida pressionado!");
-    // Navegação ou lógica do modal aqui
+  // Estado para o texto da busca
+  const [searchText, setSearchText] = useState(""); // Mudança: Usar useState
+  // --- ESTADO PARA CONTROLAR A VISIBILIDADE DO DIALOG ---
+  const [isDialogVisible, setDialogVisible] = useState(false);
+
+  // --- FUNÇÕES PARA CONTROLAR O DIALOG ---
+  const handleOpenDialog = () => {
+    console.log("Abrindo diálogo..."); // Log para debug
+    setDialogVisible(true);
   };
 
-  // Estado para o texto da busca (opcional, para funcionalidade futura)
-  const [searchText, setSearchText] = React.useState("");
+  const handleCloseDialog = () => {
+    setDialogVisible(false);
+  };
+
+  const handleDialogSubmit = (data) => {
+    console.log("Dados da Partida para Criar:", data);
+    // Aqui você adicionaria a lógica para enviar os dados para sua API ou estado global
+    // Exemplo: chamar uma função createMatch(data)
+    handleCloseDialog(); // Fecha o dialog após a submissão
+  };
+  // --- FIM DAS FUNÇÕES DO DIALOG ---
+
+  // A função handleCriarPartidaPress original foi substituída por handleOpenDialog
 
   return (
     <View style={styles.screenContainer}>
@@ -38,9 +58,7 @@ const jogos = () => {
           placeholderTextColor="#8E8E93"
           value={searchText}
           onChangeText={setSearchText}
-          // --- ADICIONADO ---
-          underlineColorAndroid="transparent" // Remove sublinhado no Android
-          // --- FIM ADICIONADO ---
+          underlineColorAndroid="transparent"
         />
       </View>
       {/* --- Fim da Barra de Busca --- */}
@@ -100,20 +118,31 @@ const jogos = () => {
       <View style={styles.fabContainer}>
         <TouchableOpacity
           style={styles.criarpartidaB}
-          onPress={handleCriarPartidaPress}
+          // --- MUDANÇA: Chamar handleOpenDialog ---
+          onPress={handleOpenDialog}
           activeOpacity={0.8}
         >
           <Text style={styles.criarpartidaText}>Criar Partida</Text>
         </TouchableOpacity>
       </View>
+
+      {/* --- RENDERIZAR O DIALOG --- */}
+      <CriarPartidaDialog
+        visible={isDialogVisible}
+        onClose={handleCloseDialog}
+        onSubmit={handleDialogSubmit}
+      />
+      {/* --- FIM DA RENDERIZAÇÃO DO DIALOG --- */}
     </View>
   );
 };
 
+// --- Estilos (permanecem os mesmos) ---
 const styles = StyleSheet.create({
   screenContainer: {
     flex: 1,
     backgroundColor: "rgba(3, 3, 38, 1)",
+    paddingTop: 20, // Adicionado paddingTop para não colar no topo
   },
   title: {
     fontSize: 28,
@@ -141,18 +170,21 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#FFFFFF",
     height: "100%",
-    backgroundColor: "rgba(55, 53, 78, 1)", // Garante que o fundo do input seja o mesmo do container
-    outlineStyle: "none" as any,
+    backgroundColor: "rgba(55, 53, 78, 1)",
+    // @ts-ignore - Para compatibilidade web/outros
+    outlineStyle: "none",
   },
   scrollContentContainer: {
-    paddingBottom: 20,
+    paddingBottom: 20, // Garante espaço abaixo do último card
   },
   fabContainer: {
     position: "absolute",
     bottom: 0,
     left: 16,
     right: 16,
-    paddingBottom: 15,
+    paddingBottom: 15, // Espaço abaixo do botão
+    // backgroundColor: 'rgba(3, 3, 38, 0.8)', // Fundo semi-transparente opcional
+    // paddingTop: 10, // Espaço acima do botão opcional
   },
   criarpartidaB: {
     backgroundColor: "rgba(88, 95, 223, 1)",
