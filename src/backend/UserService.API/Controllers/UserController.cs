@@ -1,4 +1,5 @@
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using UserService.Application.DTOs;
 
@@ -12,25 +13,30 @@ public class UserController : ControllerBase
     private readonly IValidator<CreateUserDto> _validator;  
   
     public UserController(Application.Services.UserService userService, IValidator<CreateUserDto> validator)  
-    {        _userService = userService;  
+    {        
+        _userService = userService;  
         _validator = validator;  
     }  
     
-    [HttpPost("register")]  
+    [HttpPost("register")]
+    [Authorize]
     public async Task<IResult> RegisterUser([FromBody] CreateUserDto createUserDto)  
-    {        var validationResult = await _validator.ValidateAsync(createUserDto);  
+    {        
+        var validationResult = await _validator.ValidateAsync(createUserDto);  
   
         if (!validationResult.IsValid)  
-        {            var problemDetails = new HttpValidationProblemDetails(validationResult.ToDictionary())  
-            {                Status = StatusCodes.Status400BadRequest,  
+        {            
+            var problemDetails = new HttpValidationProblemDetails(validationResult.ToDictionary())  
+            {                
+                Status = StatusCodes.Status400BadRequest,  
                 Title = "Failed to validate input to register a new user",  
                 Detail = "One or more errors occurred",  
                 Instance = "/api/register"  
             };  
   
             return Results.Problem(problemDetails);  
-        }        await _userService.CreateUserAsync(createUserDto);  
+        }        
+        await _userService.CreateUserAsync(createUserDto);
         return Results.Created(createUserDto.Username, createUserDto.Email);  
-        return Results.Accepted();  
     }  
 }
