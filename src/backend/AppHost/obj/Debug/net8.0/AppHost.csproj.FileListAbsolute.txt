@@ -65,7 +65,6 @@
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfo.cs
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/AppHost.csproj.CoreCompileInputs.cache
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/Aspire/references/UserService_API.ProjectMetadata.g.cs
-/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/Aspire/references/UserService_Infrastructure.ProjectMetadata.g.cs
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/Aspire/references/_AppHost.ProjectMetadata.g.cs
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/AppHost.sourcelink.json
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/AppHost.csproj.Up2Date
@@ -74,3 +73,4 @@
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/AppHost.pdb
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/AppHost.genruntimeconfig.cache
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/ref/AppHost.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost/obj/Debug/net8.0/Aspire/references/MatchService_API.ProjectMetadata.g.cs

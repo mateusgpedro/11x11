@@ -32,11 +32,9 @@
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/obj/Debug/net8.0/UserService.API.genruntimeconfig.cache
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/obj/Debug/net8.0/ref/UserService.API.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll
-/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Auth0.AspNetCore.Authentication.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/FluentValidation.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/FluentValidation.DependencyInjectionExtensions.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
-/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll
@@ -140,3 +138,5 @@
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/BCrypt.Net-Next.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/bin/Debug/net8.0/Microsoft.Bcl.Memory.dll

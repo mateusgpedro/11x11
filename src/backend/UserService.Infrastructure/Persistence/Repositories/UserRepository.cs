@@ -8,30 +8,46 @@ public class UserRepository : IUserRepository
 {  
     private readonly UserDbContext _dbContext;  
     public UserRepository(UserDbContext dbContext)  
-    {        _dbContext = dbContext;  
-    }    public async Task<User?> GetUserByIdAsync(Guid id)  
-    {        var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);  
+    {        
+        _dbContext = dbContext;  
+    }    
+    public async Task<User?> GetUserByIdAsync(Guid id)  
+    {        
+        var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == id);  
         return user;  
     }  
     public async Task<User?> GetUserByUsernameAsync(string username)  
-    {        var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Username == username);  
+    {        
+        var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Username == username);  
         return user;  
     }  
     public async Task UpdateUserAsync(User user, string? username, string? email)  
-    {        if (username != null)  
-        {            user.Username = username;  
-        }        if (email != null)  
-        {            user.Email = email;  
-        }        await _dbContext.SaveChangesAsync();  
-    }  
-    public async Task CreateUserAsync(string username, string email)  
-    {        var newUser = new User(Guid.NewGuid(), username, email);  
-        await _dbContext.AddAsync(newUser);  
+    {        
+        if (username != null)  
+        {
+            user.Username = username;  
+        }        
+        if (email != null)  
+        {            
+            user.Email = email;  
+        }        
+        
         await _dbContext.SaveChangesAsync();  
     }  
+    public async Task<User> CreateUserAsync(string username, string email, string hashedPassword)  
+    {        
+        var newUser = new User(Guid.NewGuid(), username, email, hashedPassword);  
+        await _dbContext.AddAsync(newUser);  
+        await _dbContext.SaveChangesAsync();  
+        
+        return newUser;
+    }  
     public async Task<bool> IsUsernameUniqueAsync(string username)  
-    {        return await _dbContext.Users.AnyAsync(u => u.Username == username);  
+    {        
+        return await _dbContext.Users.AnyAsync(u => u.Username == username);  
     }  
     public async Task<bool> IsEmailUniqueAsync(string email)  
-    {        return await _dbContext.Users.AnyAsync(u => u.Email == email);  
-    }}
+    {        
+        return await _dbContext.Users.AnyAsync(u => u.Email == email);  
+    }
+}

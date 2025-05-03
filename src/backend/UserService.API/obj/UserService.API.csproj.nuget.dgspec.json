@@ -127,9 +127,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Auth0.AspNetCore.Authentication": {
+            "BCrypt.Net-Next": {
               "target": "Package",
-              "version": "[1.4.1, )"
+              "version": "[4.0.3, )"
             },
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
@@ -138,6 +138,10 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[8.0.15, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.9.0, )"
             }
           },
           "imports": [
