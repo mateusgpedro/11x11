@@ -1,5 +1,8 @@
+using System.Security.Claims;
 using FluentValidation;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using UserService.Application.Validators;
 using UserService.Domain.Repositories;
 using UserService.Infrastructure.Persistence;
@@ -20,6 +23,20 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+var domain = $"https://{builder.Configuration["Auth0:Domain"]}/";
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.Authority = domain;
+        options.Audience = builder.Configuration["Auth0:Audience"];
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            NameClaimType = ClaimTypes.NameIdentifier
+        };
+    });
+
+builder.Services.AddAuthorization();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -34,6 +51,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
