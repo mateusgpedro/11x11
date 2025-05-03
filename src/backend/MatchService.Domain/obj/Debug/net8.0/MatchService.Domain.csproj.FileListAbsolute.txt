@@ -1,0 +1,12 @@
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/bin/Debug/net8.0/MatchService.Domain.deps.json
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/bin/Debug/net8.0/MatchService.Domain.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/bin/Debug/net8.0/MatchService.Domain.pdb
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.AssemblyInfoInputs.cache
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.AssemblyInfo.cs
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.csproj.CoreCompileInputs.cache
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.sourcelink.json
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/refint/MatchService.Domain.dll
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.pdb
+/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/Debug/net8.0/ref/MatchService.Domain.dll

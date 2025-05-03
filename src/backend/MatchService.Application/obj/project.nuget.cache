@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "966pnBTF0m4=",
+  "success": true,
+  "projectFilePath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Application/MatchService.Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/josepedro/.nuget/packages/microsoft.bcl.memory/9.0.0/microsoft.bcl.memory.9.0.0.nupkg.sha512",
+    "/Users/josepedro/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/josepedro/.nuget/packages/microsoft.extensions.logging.abstractions/8.0.0/microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "/Users/josepedro/.nuget/packages/microsoft.identitymodel.abstractions/8.9.0/microsoft.identitymodel.abstractions.8.9.0.nupkg.sha512",
+    "/Users/josepedro/.nuget/packages/microsoft.identitymodel.jsonwebtokens/8.9.0/microsoft.identitymodel.jsonwebtokens.8.9.0.nupkg.sha512",
+    "/Users/josepedro/.nuget/packages/microsoft.identitymodel.logging/8.9.0/microsoft.identitymodel.logging.8.9.0.nupkg.sha512",
+    "/Users/josepedro/.nuget/packages/microsoft.identitymodel.tokens/8.9.0/microsoft.identitymodel.tokens.8.9.0.nupkg.sha512",
+    "/Users/josepedro/.nuget/packages/system.identitymodel.tokens.jwt/8.9.0/system.identitymodel.tokens.jwt.8.9.0.nupkg.sha512"
+  ],
+  "logs": []
+}
