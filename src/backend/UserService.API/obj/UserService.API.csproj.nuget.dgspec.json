@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/UserService.API.csproj": {}
+    "/Users/mateus/Documents/11x11/src/backend/UserService.API/UserService.API.csproj": {}
   },
   "projects": {
-    "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/UserService.API.csproj": {
+    "/Users/mateus/Documents/11x11/src/backend/UserService.API/UserService.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/UserService.API.csproj",
+        "projectUniqueName": "/Users/mateus/Documents/11x11/src/backend/UserService.API/UserService.API.csproj",
         "projectName": "UserService.API",
-        "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/UserService.API.csproj",
-        "packagesPath": "/Users/josepedro/.nuget/packages/",
-        "outputPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.API/obj/",
+        "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.API/UserService.API.csproj",
+        "packagesPath": "/Users/mateus/.nuget/packages/",
+        "outputPath": "/Users/mateus/Documents/11x11/src/backend/UserService.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/josepedro/.nuget/NuGet/NuGet.Config"
+          "/Users/mateus/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,11 +26,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/UserService.Application.csproj": {
-                "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/UserService.Application.csproj"
+              "/Users/mateus/Documents/11x11/src/backend/UserService.Application/UserService.Application.csproj": {
+                "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Application/UserService.Application.csproj"
               },
-              "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj": {
-                "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj"
+              "/Users/mateus/Documents/11x11/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj": {
+                "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj"
               }
             }
           }
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -72,6 +73,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -80,21 +95,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/UserService.Application.csproj": {
+    "/Users/mateus/Documents/11x11/src/backend/UserService.Application/UserService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/UserService.Application.csproj",
+        "projectUniqueName": "/Users/mateus/Documents/11x11/src/backend/UserService.Application/UserService.Application.csproj",
         "projectName": "UserService.Application",
-        "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/UserService.Application.csproj",
-        "packagesPath": "/Users/josepedro/.nuget/packages/",
-        "outputPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Application/obj/",
+        "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Application/UserService.Application.csproj",
+        "packagesPath": "/Users/mateus/.nuget/packages/",
+        "outputPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/josepedro/.nuget/NuGet/NuGet.Config"
+          "/Users/mateus/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -106,8 +121,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/UserService.Domain.csproj": {
-                "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/UserService.Domain.csproj"
+              "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/UserService.Domain.csproj": {
+                "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/UserService.Domain.csproj"
               }
             }
           }
@@ -121,7 +136,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -155,26 +171,36 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/UserService.Domain.csproj": {
+    "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/UserService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/UserService.Domain.csproj",
+        "projectUniqueName": "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/UserService.Domain.csproj",
         "projectName": "UserService.Domain",
-        "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/UserService.Domain.csproj",
-        "packagesPath": "/Users/josepedro/.nuget/packages/",
-        "outputPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/obj/",
+        "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/UserService.Domain.csproj",
+        "packagesPath": "/Users/mateus/.nuget/packages/",
+        "outputPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/josepedro/.nuget/NuGet/NuGet.Config"
+          "/Users/mateus/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -197,7 +223,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -213,26 +240,36 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj": {
+    "/Users/mateus/Documents/11x11/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj",
+        "projectUniqueName": "/Users/mateus/Documents/11x11/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj",
         "projectName": "UserService.Infrastructure",
-        "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj",
-        "packagesPath": "/Users/josepedro/.nuget/packages/",
-        "outputPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Infrastructure/obj/",
+        "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Infrastructure/UserService.Infrastructure.csproj",
+        "packagesPath": "/Users/mateus/.nuget/packages/",
+        "outputPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/josepedro/.nuget/NuGet/NuGet.Config"
+          "/Users/mateus/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -244,8 +281,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/UserService.Domain.csproj": {
-                "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/UserService.Domain/UserService.Domain.csproj"
+              "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/UserService.Domain.csproj": {
+                "projectPath": "/Users/mateus/Documents/11x11/src/backend/UserService.Domain/UserService.Domain.csproj"
               }
             }
           }
@@ -259,7 +296,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -291,12 +329,22 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.22, 8.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

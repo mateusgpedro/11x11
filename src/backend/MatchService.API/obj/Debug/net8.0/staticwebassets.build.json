@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "GuqKono7KQOnj8TWmVBN8td8vAzfuSpTj9eTCtsVLRU=",
-  "Source": "MatchService.API",
-  "BasePath": "_content/MatchService.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"cdGljfZbxeH0Y4jpDdp6n7QtIfOnF0vBe83Fcm/OBkA=","Source":"MatchService.API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

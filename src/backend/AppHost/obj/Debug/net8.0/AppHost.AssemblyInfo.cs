@@ -11,19 +11,19 @@ using System;
 using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("9cc53503-bd1e-4405-b223-f2b90d3fce59")]
-[assembly: System.Reflection.AssemblyMetadata("dcpclipath", "/Users/josepedro/.nuget/packages/aspire.hosting.orchestration.osx-arm64/8.2.2/too" +
-    "ls/dcp")]
-[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", "/Users/josepedro/.nuget/packages/aspire.hosting.orchestration.osx-arm64/8.2.2/too" +
-    "ls/ext/")]
-[assembly: System.Reflection.AssemblyMetadata("dcpbinpath", "/Users/josepedro/.nuget/packages/aspire.hosting.orchestration.osx-arm64/8.2.2/too" +
-    "ls/ext/bin/")]
-[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/AppHost")]
-[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", "/Users/josepedro/.nuget/packages/aspire.dashboard.sdk.osx-arm64/8.2.2/tools/Aspir" +
-    "e.Dashboard.dll")]
+[assembly: System.Reflection.AssemblyMetadata("dcpclipath", ("/Users/mateus/.nuget/packages/aspire.hosting.orchestration.osx-arm64/13.2.2/tools" +
+    "/dcp"))]
+[assembly: System.Reflection.AssemblyMetadata("dcpextensionpaths", ("/Users/mateus/.nuget/packages/aspire.hosting.orchestration.osx-arm64/13.2.2/tools" +
+    "/ext/"))]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectpath", "/Users/mateus/Documents/11x11/src/backend/AppHost")]
+[assembly: System.Reflection.AssemblyMetadata("apphostprojectname", "AppHost.csproj")]
+[assembly: System.Reflection.AssemblyMetadata("aspiredashboardpath", ("/Users/mateus/.nuget/packages/aspire.dashboard.sdk.osx-arm64/13.2.2/tools/Aspire." +
+    "Dashboard.dll"))]
+[assembly: System.Reflection.AssemblyMetadataAttribute("apphostprojectbaseintermediateoutputpath", "/Users/mateus/Documents/11x11/src/backend/AppHost/obj/")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b5f664cd81fc7c424bd8c70f795f4b89707ec82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad0e53669e96c9a97947373a79efc0150e0690b6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

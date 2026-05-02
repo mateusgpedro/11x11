@@ -27,7 +27,12 @@ public class UserService
     public async Task<User?> LoginUserAsync(LoginUserDto dto)
     {
         var user = await _userRepository.GetUserByUsernameAsync(dto.Username);
-        
+
+        if (user is null)
+        {
+            return null;
+        }
+
         bool isValid = BCrypt.Net.BCrypt.Verify(dto.Password, user.Password);
         return isValid ? user : null;
     }

@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "pBpU5Uu4Y0jwA5Yh6BqsAYNSnyerBg/86fUIuIrz48c=",
-  "Source": "UserService.API",
-  "BasePath": "_content/UserService.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"noWU8Ho8dS0Yof7mM2hqzWERUD6jMGo97Zd2qwMq+eI=","Source":"UserService.API","BasePath":"/","Mode":"Root","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

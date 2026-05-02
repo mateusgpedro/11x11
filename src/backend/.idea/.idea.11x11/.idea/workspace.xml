@@ -5,6 +5,8 @@
     <projectFile aspireProfileName="https">11x11/11x11.csproj</projectFile>
     <projectFile aspireProfileName="http">AppHost/AppHost.csproj</projectFile>
     <projectFile aspireProfileName="https">AppHost/AppHost.csproj</projectFile>
+    <projectFile profileName="http">MatchService.API/MatchService.API.csproj</projectFile>
+    <projectFile profileName="https">MatchService.API/MatchService.API.csproj</projectFile>
     <projectFile profileName="http">UserService.API/UserService.API.csproj</projectFile>
     <projectFile profileName="https">UserService.API/UserService.API.csproj</projectFile>
     <projectFile profileName="UserService.Migrations">UserService.Migrations/UserService.Migrations.csproj</projectFile>
@@ -16,135 +18,239 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0959120f-b3f0-407b-bdde-0202405d2ca7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.11x11/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.11x11/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.11x11/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.11x11/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11x11.sln" beforeDir="false" afterPath="$PROJECT_DIR$/11x11.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/AppHost.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/AppHost.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.AppHost.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.PostgreSQL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Fractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Google.Protobuf.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Core.Api.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.Client.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.ClientFactory.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/IdentityModel.OidcClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/IdentityModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/KubernetesClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Hosting.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Http.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Debug.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventLog.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventSource.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Options.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Polly.Core.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/System.Diagnostics.EventLog.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/YamlDotNet.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/cs/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/de/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/es/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/fr/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/it/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ja/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ko/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/pl/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/pt-BR/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ru/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/tr/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/zh-Hans/Aspire.Hosting.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/zh-Hant/Aspire.Hosting.resources.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/AppHost.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.PostgreSQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.PostgreSQL.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Aspire.Hosting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Google.Protobuf.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Google.Protobuf.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.AspNetCore.Server.ClientFactory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.AspNetCore.Server.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Core.Api.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Core.Api.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.Client.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.Client.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.ClientFactory.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.ClientFactory.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.Common.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Grpc.Net.Common.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/KubernetesClient.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/KubernetesClient.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.FileExtensions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Json.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Configuration.UserSecrets.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Hosting.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Hosting.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Hosting.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Http.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Http.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Configuration.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Console.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Debug.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.Debug.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventSource.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.EventSource.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Options.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Microsoft.Extensions.Options.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Polly.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/Polly.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/System.Diagnostics.EventLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/System.Diagnostics.EventLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/YamlDotNet.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/YamlDotNet.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/cs/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/cs/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/de/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/de/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/es/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/es/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/fr/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/fr/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/it/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/it/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ja/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ja/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ko/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ko/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/pl/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/pl/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/pt-BR/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/pt-BR/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ru/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/ru/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.Messages.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/tr/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/tr/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/zh-Hans/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/zh-Hans/Aspire.Hosting.resources.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/zh-Hant/Aspire.Hosting.resources.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/bin/Debug/net8.0/zh-Hant/Aspire.Hosting.resources.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/AppHost.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.GlobalUsings.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.Up2Date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/apphost" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/ref/AppHost.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/refint/AppHost.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/AppHost.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/Aspire/references/MatchService_API.ProjectMetadata.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/Aspire/references/MatchService_API.ProjectMetadata.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/Aspire/references/UserService_API.ProjectMetadata.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/Aspire/references/UserService_API.ProjectMetadata.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/Aspire/references/_AppHost.ProjectMetadata.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/ref/AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/ref/AppHost.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/refint/AppHost.dll" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/Debug/net8.0/refint/AppHost.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppHost/obj/rider.project.model.nuget.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AppHost/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AppHost/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/AppHost/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/Controllers/UserController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/Controllers/UserController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/Properties/launchSettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/UserService.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/UserService.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/UserService.API.http" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/UserService.API.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/Npgsql.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/Npgsql.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/bin/Debug/net8.0/MatchService.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/MatchService.API.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/apphost" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/ref/MatchService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/ref/MatchService.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/refint/MatchService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/refint/MatchService.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/MatchService.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/MatchService.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/MatchService.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/MatchService.API.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Application.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/bin/Debug/net8.0/MatchService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/MatchService.Application.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/ref/MatchService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/ref/MatchService.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/refint/MatchService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/Debug/net8.0/refint/MatchService.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/MatchService.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/MatchService.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/MatchService.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/MatchService.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/bin/Debug/net8.0/MatchService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/bin/Debug/net8.0/MatchService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/bin/Debug/net8.0/MatchService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/bin/Debug/net8.0/MatchService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/MatchService.Domain.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/ref/MatchService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/ref/MatchService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/refint/MatchService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/Debug/net8.0/refint/MatchService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/MatchService.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/MatchService.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/MatchService.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/MatchService.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/Persistence/Repositories/MatchRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/Persistence/Repositories/MatchRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Infrastructure.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/bin/Debug/net8.0/MatchService.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/MatchService.Infrastructure.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/ref/MatchService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/ref/MatchService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/refint/MatchService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/Debug/net8.0/refint/MatchService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/MatchService.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/MatchService.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/MatchService.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/MatchService.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MatchService.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/MatchService.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Application.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Persistence.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Persistence.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/bin/Debug/net8.0/UserService.Infrastructure.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.MvcApplicationPartsAssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.GlobalUsings.g.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.genruntimeconfig.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/UserService.API.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/apphost" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/apphost" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/ref/UserService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/ref/UserService.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/refint/UserService.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/refint/UserService.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/Debug/net8.0/staticwebassets.build.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/UserService.API.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/Services/UserService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/Services/UserService.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/Validators/CreateUserDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/Validators/CreateUserDtoValidator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/Validators/LoginUserDtoValidator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/Validators/LoginUserDtoValidator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Application.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Application.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Application.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Application.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/bin/Debug/net8.0/UserService.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.csproj.FileListAbsolute.txt" afterDir="false" />
@@ -153,59 +259,61 @@
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/UserService.Application.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/ref/UserService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/ref/UserService.Application.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/refint/UserService.Application.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/Debug/net8.0/refint/UserService.Application.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/UserService.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/UserService.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/UserService.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/UserService.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Application/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/UserService.Contracts.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/Debug/net8.0/UserService.Contracts.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/Debug/net8.0/UserService.Contracts.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/Debug/net8.0/UserService.Contracts.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/Debug/net8.0/UserService.Contracts.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/Debug/net8.0/UserService.Contracts.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/UserService.Contracts.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/UserService.Contracts.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/UserService.Contracts.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Contracts/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Domain/Entities/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/Entities/User.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Domain/Repositories/IUserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/Repositories/IUserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/bin/Debug/net8.0/UserService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/bin/Debug/net8.0/UserService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/bin/Debug/net8.0/UserService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/bin/Debug/net8.0/UserService.Domain.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/UserService.Domain.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/ref/UserService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/ref/UserService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/refint/UserService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/Debug/net8.0/refint/UserService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/UserService.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/UserService.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/UserService.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/UserService.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserService.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/Infra/ApplicationDbContext.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/Infra/Repositories/UserRepository.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/UserService.Persistence.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/bin/Debug/net8.0/UserService.Persistence.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.GlobalUsings.g.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/UserService.Persistence.sourcelink.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/ref/UserService.Persistence.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/Debug/net8.0/refint/UserService.Persistence.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/UserService.Persistence.csproj.nuget.dgspec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/UserService.Persistence.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/UserService.Persistence.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/project.packagespec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/rider.project.model.nuget.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserService.Persistence/obj/rider.project.restore.info" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/Persistence/Repositories/UserRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/Persistence/Repositories/UserRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Domain.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Domain.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Domain.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Domain.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Infrastructure.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Infrastructure.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/bin/Debug/net8.0/UserService.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.GlobalUsings.g.cs" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.GlobalUsings.g.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.genruntimeconfig.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.genruntimeconfig.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/UserService.Infrastructure.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/ref/UserService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/ref/UserService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/refint/UserService.Infrastructure.dll" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/Debug/net8.0/refint/UserService.Infrastructure.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/UserService.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/UserService.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/UserService.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/UserService.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserService.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/UserService.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,8 +346,11 @@
     &quot;Aspire Host.AppHost: http.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev-mateus&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/mateus/Documents/11x11&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -349,17 +460,50 @@
         <option name="Build" />
       </method>
     </configuration>
-    <configuration name="UserService.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
-      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/UserService.API/UserService.API.csproj" />
+    <configuration name="MatchService.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MatchService.API/MatchService.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="MatchService.API: https" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/MatchService.API/MatchService.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="https" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="UserService.API: http" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/UserService.API/UserService.API.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_NAME" value="http" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -368,13 +512,14 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/UserService.API/UserService.API.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -383,13 +528,14 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/UserService.Migrations/UserService.Migrations.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="UserService.Migrations" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -398,13 +544,14 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/UserService.Persistence/UserService.Persistence.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -413,13 +560,14 @@
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/UserService.Persistence/UserService.Persistence.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
       <option name="LAUNCH_PROFILE_NAME" value="https" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
       <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
       <option name="SEND_DEBUG_REQUEST" value="1" />
       <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2">
         <option name="Build" />
       </method>
@@ -437,6 +585,8 @@
       <workItem from="1746190458433" duration="16616000" />
       <workItem from="1746210395352" duration="48000" />
       <workItem from="1746210466488" duration="1339000" />
+      <workItem from="1777737145811" duration="1416000" />
+      <workItem from="1777738662750" duration="886000" />
     </task>
     <servers />
   </component>

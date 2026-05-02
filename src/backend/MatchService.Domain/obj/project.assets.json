@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/josepedro/.nuget/packages/": {}
+    "/Users/mateus/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/MatchService.Domain.csproj",
+      "projectUniqueName": "/Users/mateus/Documents/11x11/src/backend/MatchService.Domain/MatchService.Domain.csproj",
       "projectName": "MatchService.Domain",
-      "projectPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/MatchService.Domain.csproj",
-      "packagesPath": "/Users/josepedro/.nuget/packages/",
-      "outputPath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/obj/",
+      "projectPath": "/Users/mateus/Documents/11x11/src/backend/MatchService.Domain/MatchService.Domain.csproj",
+      "packagesPath": "/Users/mateus/.nuget/packages/",
+      "outputPath": "/Users/mateus/Documents/11x11/src/backend/MatchService.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/josepedro/.nuget/NuGet/NuGet.Config"
+        "/Users/mateus/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -43,7 +43,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -59,12 +60,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.22, 8.0.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

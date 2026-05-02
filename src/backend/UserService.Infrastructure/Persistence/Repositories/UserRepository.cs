@@ -44,10 +44,10 @@ public class UserRepository : IUserRepository
     }  
     public async Task<bool> IsUsernameUniqueAsync(string username)  
     {        
-        return await _dbContext.Users.AnyAsync(u => u.Username == username);  
+        return !await _dbContext.Users.AnyAsync(u => u.Username == username);  
     }  
     public async Task<bool> IsEmailUniqueAsync(string email)  
     {        
-        return await _dbContext.Users.AnyAsync(u => u.Email == email);  
+        return !await _dbContext.Users.AnyAsync(u => u.Email == email);  
     }
 }

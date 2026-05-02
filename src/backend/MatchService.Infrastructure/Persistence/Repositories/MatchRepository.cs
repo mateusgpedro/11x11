@@ -20,7 +20,7 @@ public class MatchRepository : IMatchRepository
 
     public async Task<Match> CreateMatchAsync(string name, string description, string  location, string startTime, string endTime)
     {
-        var newMatch = new Match(name, description, location, startTime, endTime);
+        var newMatch = new Match(name, location, startTime, endTime, description);
         await _dbContext.Matches.AddAsync(newMatch);
         await _dbContext.SaveChangesAsync();
 

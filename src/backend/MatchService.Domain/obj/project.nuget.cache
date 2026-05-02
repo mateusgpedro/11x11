@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "w7rsozlmZ3g=",
+  "dgSpecHash": "2YhvTWahs1Q=",
   "success": true,
-  "projectFilePath": "/Users/josepedro/Documents/Projects/11x11/11x11-project/src/backend/MatchService.Domain/MatchService.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/mateus/Documents/11x11/src/backend/MatchService.Domain/MatchService.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/mateus/.nuget/packages/microsoft.netcore.app.ref/8.0.22/microsoft.netcore.app.ref.8.0.22.nupkg.sha512",
+    "/Users/mateus/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.22/microsoft.aspnetcore.app.ref.8.0.22.nupkg.sha512"
+  ],
   "logs": []
 }
